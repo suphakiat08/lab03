@@ -13,8 +13,8 @@
     
     /* Set gray background color and 100% height */
     .sidenav {
-      background-color: #f1f1f1;
-      height: 100%;
+      background-color: #4a4a4a;
+      height: 130%;
     }
     
     /* Set black background color, white text and some padding */
@@ -32,47 +32,85 @@
       }
       .row.content {height: auto;} 
     }
+
+    .col-sm-9,body{
+      background: #fff;
+    }
+
+    .circle { 
+      width: 25%;
+      -moz-border-radius: 50%; 
+      -webkit-border-radius: 50%; 
+      border-radius: 50%;
+    }
+
+    .IM{
+      font: 28px monospace;
+      line-height: 1.8;
+      color: #f5f6f7;
+      margin-top: 0px;
+    }
+
+    #menu{
+      font: 18px;
+      line-height: 1.8;
+      color: #f5f6f7;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #666;
+    }
+
   </style>
 </head>
-<body>
+<body style="font :'Kanit', sans-serif;">
 
 <div class="container-fluid">
   <div class="row content">
     <div class="col-sm-3 sidenav">
-      <h4>Joe's Blog</h4>
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Home</a></li>
-        <li><a href="#section2">Friends</a></li>
-        <li><a href="#section3">Family</a></li>
-        <li><a href="#section3">Photos</a></li>
+      <center><h3 id="menu">My Blog</h3><br></center>
+      <ul class="nav nav-pills nav-stacked" id="menu">
+        <li class="active"><a href="#Home">Home</a></li>
+        <li><a href="#Grid System" style="color: #fff;">Grid System</a></li>
+        <li><a href="#Bootstrap Form" style="color: #fff;">Bootstrap Form</a></li>
+        <li><a href="#Comment" style="color: #fff;">Comment</a></li>
       </ul><br>
+
+      <form method="get" action="http://google.com/search">
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="โจ้เองงงง">
+        <input type="text" class="form-control" placeholder="Google Search" name="Search" value=''>
         <span class="input-group-btn">
-          <button class="btn btn-default" type="button">
+          <button class="btn btn-default" type="submit">
             <span class="glyphicon glyphicon-search"></span>
           </button>
         </span>
       </div>
+      </form>
     </div>
 
-    <div class="col-sm-9">
-      <h4><small>RECENT POSTS</small></h4>
+    <div style="background: #11cea7;">
+      <h3 class="IM"><br><center>Welcome to My Blog<br><br><img src="img/101505.jpg" class="circle"><br><br>I'm Suphakiat Kiatkanya<br><br></center></h3>
+    </div>
+
+    <div class="col-sm-9" style="background: #ebebeb;">
+      <h4 id="Grid System"><small>RECENT POSTS</small></h4>
       <hr>
       <h2>การใช้งาน Grid ใน Bootstrap</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Post by <a href="https://www.facebook.com/sketch.book.101505" style="text-decoration:none;">Suphakiat Kiatkanya</a>, Sep 27, 2017.</h5>
-      <h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by <a href="https://www.facebook.com/sketch.book.101505" style="text-decoration:none;" target="_bank">Suphakiat Kiatkanya</a>, January 31, 2017.</h5>
+      <h5><span class="label label-danger">Bootstrap</span> <span class="label label-primary">Grid</span></h5><br>
       <p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <br><br>
-      
-      <h4><small>RECENT POSTS</small></h4>
+
+      <h4 id="Bootstrap Form"><small>RECENT POSTS</small></h4>
       <hr>
-      <h2>การใช้งาน Form</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Post by <a href="https://www.facebook.com/sketch.book.101505" style="text-decoration:none;">Suphakiat Kiatkanya</a>, Sep 24, 2015.</h5>
-      <h5><span class="label label-success">Lorem</span></h5><br>
+      <h2>การใช้งาน Form ใน Bootstrap</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by <a href="https://www.facebook.com/sketch.book.101505" style="text-decoration:none;" target="_bank">Suphakiat Kiatkanya</a>, February 2, 2017.</h5>
+      <h5><span class="label label-danger">Bootstrap</span> <span class="label label-success">Form</span></h5><br>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <hr>
+    </div>
 
+    <div class="col-sm-9" id="Comment"><br>
       <h4>Leave a Comment:</h4>
       <form role="form">
         <div class="form-group">
@@ -97,7 +135,7 @@
           <img src="img/bank.jpg" class="img-circle" height="65" width="65" alt="Avatar">
         </div>
         <div class="col-sm-10">
-          <h4>Chayan <small>Sep 25, 2015, 8:25 PM</small></h4>
+          <h4>Chayan Suratruangchai <small>Sep 25, 2015, 8:25 PM</small></h4>
           <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <br>
           <p><span class="badge">1</span> Comment:</p><br>
@@ -106,7 +144,7 @@
               <img src="img/game.jpg" class="img-circle" height="65" width="65" alt="Avatar">
             </div>
             <div class="col-xs-10">
-              <h4>Somkid <small>Sep 25, 2015, 8:28 PM</small></h4>
+              <h4>Somkid Homhual <small>Sep 25, 2015, 8:28 PM</small></h4>
               <p>Me too! WOW!</p>
               <br>
             </div>
@@ -118,7 +156,7 @@
 </div>
 
 <footer class="container-fluid">
-  <p>Footer Text</p>
+  <table width="100%"><tr><td width="80%">Name : Suphakiat Kiatkanya<br>StudentID : 58160433</td><td><a href="https://www.facebook.com/sketch.book.101505" target="_bank"><img src="img/facebook.png" width="50" align="right"></a></td></tr></table>
 </footer>
 
 </body>
