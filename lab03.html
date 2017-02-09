@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>My Blog</title>
   <meta charset="utf-8">
@@ -9,155 +10,278 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-    .row.content {height: 1500px}
     
+    .row.content {
+      height: 1500px
+    }
     /* Set gray background color and 100% height */
+    
     .sidenav {
       background-color: #4a4a4a;
-      height: 130%;
+      height: 250%;
     }
-    
     /* Set black background color, white text and some padding */
+    
     footer {
       background-color: #555;
       color: white;
       padding: 15px;
     }
-    
     /* On small screens, set height to 'auto' for sidenav and grid */
+    
     @media screen and (max-width: 767px) {
       .sidenav {
         height: auto;
         padding: 15px;
       }
-      .row.content {height: auto;} 
+      .row.content {
+        height: auto;
+      }
     }
-
-    .col-sm-9,body{
+    
+    .col-sm-9,
+    body {
       background: #fff;
     }
-
-    .circle { 
+    
+    .circle {
       width: 25%;
-      -moz-border-radius: 50%; 
-      -webkit-border-radius: 50%; 
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
       border-radius: 50%;
     }
-
-    .IM{
+    
+    .IM {
       font: 28px monospace;
       line-height: 1.8;
       color: #f5f6f7;
       margin-top: 0px;
     }
-
-    #menu{
+    
+    #menu {
       font: 18px;
       line-height: 1.8;
       color: #f5f6f7;
     }
-
+    
     li a:hover:not(.active) {
       background-color: #666;
     }
 
+    .buttonTest {
+      background-color: #008CBA;
+      border: none;
+      color: white;
+      padding: 8px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      border-radius: 5px;
+      }
+
   </style>
 </head>
+
 <body style="font :'Kanit', sans-serif;">
 
-<div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav">
-      <center><h3 id="menu">My Blog</h3><br></center>
-      <ul class="nav nav-pills nav-stacked" id="menu">
-        <li class="active"><a href="#Home">Home</a></li>
-        <li><a href="#Grid System" style="color: #fff;">Grid System</a></li>
-        <li><a href="#Bootstrap Form" style="color: #fff;">Bootstrap Form</a></li>
-        <li><a href="#Comment" style="color: #fff;">Comment</a></li>
-      </ul><br>
+  <div class="container-fluid">
+    <div class="row content">
+      <div class="col-sm-3 sidenav">
+        <center>
+          <h3 id="menu">My Blog</h3><br></center>
+        <ul class="nav nav-pills nav-stacked" id="menu">
+          <li class="active"><a href="#Home">Home</a></li>
+          <li><a href="#Grid System" style="color: #fff;">Grid System</a></li>
+          <li><a href="#Bootstrap Form" style="color: #fff;">Bootstrap Form</a></li>
+          <li><a href="#Comment" style="color: #fff;">Comment</a></li>
+        </ul><br>
 
-      <form method="get" action="http://google.com/search">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Google Search" name="Search" value=''>
-        <span class="input-group-btn">
+        <form method="get" action="http://google.com/search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Google Search" name="Search" value=''>
+            <span class="input-group-btn">
           <button class="btn btn-default" type="submit">
             <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </span>
+            </button>
+            </span>
+          </div>
+        </form>
       </div>
-      </form>
-    </div>
 
-    <div style="background: #11cea7;">
-      <h3 class="IM"><br><center>Welcome to My Blog<br><br><img src="img/101505.jpg" class="circle"><br><br>I'm Suphakiat Kiatkanya<br><br></center></h3>
-    </div>
+      <div style="background: #11cea7;">
+        <h3 class="IM"><br>
+          <center>Welcome to My Blog<br><br><img src="img/101505.jpg" class="circle"><br><br>I'm Suphakiat Kiatkanya<br><br></center>
+        </h3>
+      </div>
 
-    <div class="col-sm-9" style="background: #ebebeb;">
-      <h4 id="Grid System"><small>RECENT POSTS</small></h4>
-      <hr>
-      <h2>การใช้งาน Grid ใน Bootstrap</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Post by <a href="https://www.facebook.com/sketch.book.101505" style="text-decoration:none;" target="_bank">Suphakiat Kiatkanya</a>, January 31, 2017.</h5>
-      <h5><span class="label label-danger">Bootstrap</span> <span class="label label-primary">Grid</span></h5><br>
-      <p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <br><br>
+      <div class="col-sm-9" style="background: #ebebeb;">
+        <h4 id="Grid System"><small>RECENT POSTS</small></h4>
+        <hr>
+        <h2>การใช้งาน Grid ใน Bootstrap</h2>
+        <h5><span class="glyphicon glyphicon-time"></span> Post by
+          <a href="https://www.facebook.com/sketch.book.101505" style="text-decoration:none;" target="_bank">Suphakiat Kiatkanya</a>,
+          January 31, 2017.</h5>
+        <h5><span class="label label-danger">Bootstrap</span> <span class="label label-primary">Grid</span></h5><br>
+        <div style="margin-left: 15px;">
+          <p>
+            <h4>Grid System</h4>
+          </p>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grid System หรือ Layout จะทำหน้าที่คอยควบคุมวัตถุต่างๆ บนหน้าเว็บไซต์ให้แสดงผลได้อย่างถูกต้องตามหลัก
+            box layout และจะส่งผลดีต่อการเขียนหนึ่งหน้าเว็บไซต์ แต่สามารถใช้ร่วมกับอุปกรณ์ทุกขนาดหน้าจอ Grid system ของ Bootstrap
+            เอง แบ่งออกเป็น 12 คอลัมน์ ถ้าให้เห็นภาพง่ายขึ้นก็น่าจะต้องบอกว่า เหมือนกับตาราง 1 แถว มี 12 คอลัมน์ และเราสามารถเฉลี่ยแต่ละส่วนได้ตามความต้องการ
+            ดังภาพด้านล่าง
+          </p>
+          <p>
+            <img src="img/gird.png" width="100%">
+          </p>
+          <p>
+            <h4>การใช้งาน Grid system</h4>
+          </p>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            1. ในการสร้าง Grid system นั้น Bootstrap แนะนำให้เราสร้างแถวและคอลัมน์ไว้ใน
+            container โดยคลาส container ของ Bootstrap แบ่งออกเป็น 2 ประเภท คือ container และ container-fluid สำหรับ container
+            นั้นจะแสดงผลเนื้อหาตามที่เรากำหนดความกว้างของหน้าจอ ส่วน container-fluid นั้นจะแสดงผลเนื้อหาเต็มความกว้างของหน้าจอของเรา
+            โดยในที่นี้คือเราจะใช้คลาส container
+          </p>
+          <p>
+            <pre><span><</span><span>div class="container"</span><span>></span><span><</span><span>/div></span></pre>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            2. สร้างแถวโดยใช้ class="row" ภายใต้ class="container"
+            โดยเราสามารถที่จะสร้างแถวได้ไม่จำกัด แต่แถวเหล่านั้นต้องอยู่ภายใต้ class="container"
+          </p>
+          <p>
+            <pre><span><</span><span>div class="container"</span><span>></span>
+  <span><</span><span>div class="row"</span><span>></span><br><span><</span><span>/div</span><span>></span></pre>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            3. แต่ละแถวของ Grid system นั้นมีคอลัมน์ในแต่ละแถวได้ 12 คอลัมน์ โดยคอลัมน์ของ Grid system จะแบ่งออกเป็น 4 ประเภทตามขนาดหน้าจอคือ
+          </p>
+          <p>
+            <pre>.col-xs- | <span><</span>768px
+.col-sm- | ≥768px
+.col-md- | ≥992px
+.col-lg- | ≥1200px</pre>
+          </p>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            โดยที่ "int" คือจำนวนคอลัมน์ที่เราต้องการแบ่งให้กับแต่ละเนื้อหา  ตัวอย่างเช่น เราต้องการแสดงผล 2 คอลัมน์บนขนาดหน้าจอที่ >= 768 px  เราสามารถทำได้โดยการเขียนโค้ดลงไปดังนี้ 
+          </p>
+          <p>
+            <pre><span><</span><span>!DOCTYPE html</span><span>></span>
+<span><</span><span>html lang="en"</span><span>></span>
 
-      <h4 id="Bootstrap Form"><small>RECENT POSTS</small></h4>
-      <hr>
-      <h2>การใช้งาน Form ใน Bootstrap</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Post by <a href="https://www.facebook.com/sketch.book.101505" style="text-decoration:none;" target="_bank">Suphakiat Kiatkanya</a>, February 2, 2017.</h5>
-      <h5><span class="label label-danger">Bootstrap</span> <span class="label label-success">Form</span></h5><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <hr>
-    </div>
+<span><</span><span>head</span><span>></span>
+  <span><</span><span>meta charset="UTF-8" /</span><span>></span>
+  <span><</span><span>meta http-equiv="X-UA-Compatible" content="IE=edge" /</span><span>></span>
+  <span><</span><span>meta name="viewport" content="width=device-width, initial-scale=1" /</span><span>></span>
 
-    <div class="col-sm-9" id="Comment"><br>
-      <h4>Leave a Comment:</h4>
-      <form role="form">
-        <div class="form-group">
-          <textarea class="form-control" rows="3" required></textarea>
+  <span><</span><span>title</span><span>></span>My First Boostrap Application<span><</span><span>/title</span><span>></span>
+  <span><</span><span>link rel="stylesheet" type="text/css" href="css/bootstrap.css"</span><span>></span>
+
+  <span><</span><span>!--[if lt IE 9] </span><span>></span>
+  <span><</span><span>script scr="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"</span><span>></span><span><</span><span>/script</span><span>></span>
+  <span><</span><span>script scr="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"</span><span>></span><span><</span><span>/script</span><span>></span>
+  <span><</span><span>![endif] --</span><span>></span>
+
+<span><</span><span>/head</span><span>></span>
+
+<span><</span><span>body</span><span>></span>
+  <span><</span><span>div class="container"</span><span>></span>
+    <span><</span><span>div class="row"</span><span>></span>
+    <span><</span><span>div class="col-sm-6"</span><span>></span>
+    <span><</span><span>h4</span><span>></span>Column1<span><</span><span>/h4</span><span>></span>
+    <span><</span><span>/div</span><span>></span>
+    <span><</span><span>div class="col-sm-6"</span><span>></span>
+    <span><</span><span>h4</span><span>></span>Column2<span><</span><span>/h4</span><span>></span>
+    <span><</span><span>/div</span><span>></span>
+    <span><</span><span>/div</span><span>></span>
+  <span><</span><span>/div</span><span>></span>
+  <span><</span><span>script src="js/jquery-1.11.1.js"</span><span>></span><span><</span><span>/script</span><span>></span>
+  <span><</span><span>script src="js/bootstrap.js"</span><span>></span><span><</span><span>/script</span><span>></span>
+
+<span><</span><span>/body</span><span>></span>
+<span><</span><span>/html</span><span>></span>
+            </pre><a href="grid.html" target="_bank"><button type="submit" class="buttonTest">Test Code</button></a>
+          </p>
+          ขอบคุณข้อมูลจาก : <a href="http://www.softmelt.com/article.php?id=544" style="text-decoration:none;" target="_bank">http://www.softmelt.com/article.php?id=544</a>
         </div>
-        <button type="submit" class="btn btn-success">Submit</button>
-      </form>
-      <br><br>
-      
-      <p><span class="badge">2</span> Comments:</p><br>
-      
-      <div class="row">
-        <div class="col-sm-2 text-center">
-          <img src="img/proud.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-        </div>
-        <div class="col-sm-10">
-          <h4>Proud Pawanee <small>Sep 29, 2015, 9:12 PM</small></h4>
-          <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <br>
-        </div>
-        <div class="col-sm-2 text-center">
-          <img src="img/bank.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-        </div>
-        <div class="col-sm-10">
-          <h4>Chayan Suratruangchai <small>Sep 25, 2015, 8:25 PM</small></h4>
-          <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <br>
-          <p><span class="badge">1</span> Comment:</p><br>
-          <div class="row">
-            <div class="col-sm-2 text-center">
-              <img src="img/game.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-            </div>
-            <div class="col-xs-10">
-              <h4>Somkid Homhual <small>Sep 25, 2015, 8:28 PM</small></h4>
-              <p>Me too! WOW!</p>
-              <br>
+        <br><br>
+
+        <h4 id="Bootstrap Form"><small>RECENT POSTS</small></h4>
+        <hr>
+        <h2>การใช้งาน Form ใน Bootstrap</h2>
+        <h5><span class="glyphicon glyphicon-time"></span> Post by
+          <a href="https://www.facebook.com/sketch.book.101505" style="text-decoration:none;" target="_bank">Suphakiat Kiatkanya</a>,
+          February 2, 2017.</h5>
+        <h5><span class="label label-danger">Bootstrap</span> <span class="label label-success">Form</span></h5><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <hr>
+      </div>
+
+      <div class="col-sm-9" id="Comment"><br>
+        <h4>Leave a Comment:</h4>
+        <form role="form">
+          <div class="form-group">
+            <textarea class="form-control" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        <br><br>
+
+        <p><span class="badge">2</span> Comments:</p><br>
+
+        <div class="row">
+          <div class="col-sm-2 text-center">
+            <img src="img/proud.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+          </div>
+          <div class="col-sm-10">
+            <h4>Proud Pawanee <small>Sep 29, 2015, 9:12 PM</small></h4>
+            <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <br>
+          </div>
+          <div class="col-sm-2 text-center">
+            <img src="img/bank.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+          </div>
+          <div class="col-sm-10">
+            <h4>Chayan Suratruangchai <small>Sep 25, 2015, 8:25 PM</small></h4>
+            <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <br>
+            <p><span class="badge">1</span> Comment:</p><br>
+            <div class="row">
+              <div class="col-sm-2 text-center">
+                <img src="img/game.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+              </div>
+              <div class="col-xs-10">
+                <h4>Somkid Homhual <small>Sep 25, 2015, 8:28 PM</small></h4>
+                <p>Me too! WOW!</p>
+                <br>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<footer class="container-fluid">
-  <table width="100%"><tr><td width="80%">Name : Suphakiat Kiatkanya<br>StudentID : 58160433</td><td><a href="https://www.facebook.com/sketch.book.101505" target="_bank"><img src="img/facebook.png" width="50" align="right"></a></td></tr></table>
-</footer>
+  <footer class="container-fluid">
+    <table width="100%">
+      <tr>
+        <td width="80%">Name : Suphakiat Kiatkanya<br>StudentID : 58160433</td>
+        <td>
+          <a href="https://www.facebook.com/sketch.book.101505" target="_bank"><img src="img/facebook.png" width="50" align="right"></a>
+        </td>
+      </tr>
+    </table>
+  </footer>
 
 </body>
+
 </html>
