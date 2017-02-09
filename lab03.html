@@ -18,7 +18,7 @@
     
     .sidenav {
       background-color: #4a4a4a;
-      height: 250%;
+      height: 260%;
     }
     /* Set black background color, white text and some padding */
     
@@ -67,7 +67,7 @@
     li a:hover:not(.active) {
       background-color: #666;
     }
-
+    
     .buttonTest {
       background-color: #008CBA;
       border: none;
@@ -78,14 +78,13 @@
       display: inline-block;
       font-size: 14px;
       border-radius: 5px;
-      }
-
+    }
   </style>
 </head>
 
 <body style="font :'Kanit', sans-serif;">
 
-  <div class="container-fluid">
+  <div class="container-fluid" id="Home">
     <div class="row content">
       <div class="col-sm-3 sidenav">
         <center>
@@ -97,9 +96,9 @@
           <li><a href="#Comment" style="color: #fff;">Comment</a></li>
         </ul><br>
 
-        <form method="get" action="http://google.com/search">
+        <form action="http://www.google.com/search" mathod="get" target="_blank">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Google Search" name="Search" value=''>
+            <input type="text" class="form-control" placeholder="Google Search" name="q" />
             <span class="input-group-btn">
           <button class="btn btn-default" type="submit">
             <span class="glyphicon glyphicon-search"></span>
@@ -116,8 +115,8 @@
       </div>
 
       <div class="col-sm-9" style="background: #ebebeb;">
-        <h4 id="Grid System"><small>RECENT POSTS</small></h4>
-        <hr>
+        <h4><small>RECENT POSTS</small></h4>
+        <hr id="Grid System">
         <h2>การใช้งาน Grid ใน Bootstrap</h2>
         <h5><span class="glyphicon glyphicon-time"></span> Post by
           <a href="https://www.facebook.com/sketch.book.101505" style="text-decoration:none;" target="_bank">Suphakiat Kiatkanya</a>,
@@ -140,23 +139,19 @@
             <h4>การใช้งาน Grid system</h4>
           </p>
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            1. ในการสร้าง Grid system นั้น Bootstrap แนะนำให้เราสร้างแถวและคอลัมน์ไว้ใน
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. ในการสร้าง Grid system นั้น Bootstrap แนะนำให้เราสร้างแถวและคอลัมน์ไว้ใน
             container โดยคลาส container ของ Bootstrap แบ่งออกเป็น 2 ประเภท คือ container และ container-fluid สำหรับ container
             นั้นจะแสดงผลเนื้อหาตามที่เรากำหนดความกว้างของหน้าจอ ส่วน container-fluid นั้นจะแสดงผลเนื้อหาเต็มความกว้างของหน้าจอของเรา
             โดยในที่นี้คือเราจะใช้คลาส container
           </p>
           <p>
-            <pre><span><</span><span>div class="container"</span><span>></span><span><</span><span>/div></span></pre>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            2. สร้างแถวโดยใช้ class="row" ภายใต้ class="container"
+            <pre><span><</span><span>div class="container"</span><span>></span><span><</span><span>/div></span></pre> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. สร้างแถวโดยใช้ class="row" ภายใต้ class="container"
             โดยเราสามารถที่จะสร้างแถวได้ไม่จำกัด แต่แถวเหล่านั้นต้องอยู่ภายใต้ class="container"
           </p>
           <p>
             <pre><span><</span><span>div class="container"</span><span>></span>
-  <span><</span><span>div class="row"</span><span>></span><br><span><</span><span>/div</span><span>></span></pre>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            3. แต่ละแถวของ Grid system นั้นมีคอลัมน์ในแต่ละแถวได้ 12 คอลัมน์ โดยคอลัมน์ของ Grid system จะแบ่งออกเป็น 4 ประเภทตามขนาดหน้าจอคือ
+  <span><</span><span>div class="row"</span><span>></span><br><span><</span><span>/div</span><span>></span></pre> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. แต่ละแถวของ Grid system นั้นมีคอลัมน์ในแต่ละแถวได้
+            12 คอลัมน์ โดยคอลัมน์ของ Grid system จะแบ่งออกเป็น 4 ประเภทตามขนาดหน้าจอคือ
           </p>
           <p>
             <pre>.col-xs- | <span><</span>768px
@@ -165,8 +160,8 @@
 .col-lg- | ≥1200px</pre>
           </p>
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            โดยที่ "int" คือจำนวนคอลัมน์ที่เราต้องการแบ่งให้กับแต่ละเนื้อหา  ตัวอย่างเช่น เราต้องการแสดงผล 2 คอลัมน์บนขนาดหน้าจอที่ >= 768 px  เราสามารถทำได้โดยการเขียนโค้ดลงไปดังนี้ 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; โดยที่ "int" คือจำนวนคอลัมน์ที่เราต้องการแบ่งให้กับแต่ละเนื้อหา ตัวอย่างเช่น
+            เราต้องการแสดงผล 2 คอลัมน์บนขนาดหน้าจอที่ >= 768 px เราสามารถทำได้โดยการเขียนโค้ดลงไปดังนี้
           </p>
           <p>
             <pre><span><</span><span>!DOCTYPE html</span><span>></span>
@@ -209,18 +204,61 @@
         </div>
         <br><br>
 
-        <h4 id="Bootstrap Form"><small>RECENT POSTS</small></h4>
-        <hr>
+        <h4><small>RECENT POSTS</small></h4>
+        <hr id="Bootstrap Form">
         <h2>การใช้งาน Form ใน Bootstrap</h2>
         <h5><span class="glyphicon glyphicon-time"></span> Post by
           <a href="https://www.facebook.com/sketch.book.101505" style="text-decoration:none;" target="_bank">Suphakiat Kiatkanya</a>,
           February 2, 2017.</h5>
         <h5><span class="label label-danger">Bootstrap</span> <span class="label label-success">Form</span></h5><br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div style="margin-left: 15px;">
+        <p>
+          <h4>Bootstrap Form</h4>
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Form ใน Bootstrap จะมีรูปแบบทั่วไป โดยมีลักษณะขอบโค้งมน เมื่อคลิกที่ Input จะมีแสงปรากฎออกมาขึ้นมา และจะมีความกว้าง 100%
+          วิธีการใช้งาน Bootstrap Form ก็เพียงแค่ให้ tag input, textarea และ select อยู่ภายใน class="form-control" ก็สามารถทำให้อยู่ในรูปแบบของ Bootstrap Form ได้แล้ว ดังตตัวอย่างด้านล่าง
+        </p>
+        
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Taxt Box
+        </p>
+        <p>
+          <pre><span><</span>input type="text" class="form-control" placeholder="Text input"<span>></span></pre>
+          <input type="text" class="form-control" placeholder="Text input">
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Textarea
+        </p>
+        <p>
+          <pre><span><</span>textarea class="form-control" rows="3"<span>></span><span><</span>/textarea<span>></span></pre>
+          <textarea class="form-control" rows="3" style="resize:none;"></textarea>
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Selects
+        </p>
+        <p>
+          <pre><span><</span>select class="form-control"<span>></span>
+  <span><</span>option<span>></span>HTML<span><</span>/option<span>></span>
+  <span><</span>option<span>></span>CSS<span><</span>/option<span>></span>
+  <span><</span>option<span>></span>Bootstrap<span><</span>/option<span>></span>
+  <span><</span>option<span>></span>Javascript<span><</span>/option<span>></span>
+  <span><</span>option<span>></span>Github<span><</span>/option<span>></span>
+<span><</span>/select<span>></span></pre>
+          <select class="form-control">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>Bootstrap</option>
+            <option>Javascript</option>
+            <option>Github</option>
+          </select>
+        </p>
+        ขอบคุณข้อมูลจาก : <a href="http://teerapuch.com/2014/coding/html-css/%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87-form-%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-bootstrap-3/" style="text-decoration:none;" target="_bank">http://teerapuch.com/2014/coding/html-css/form-bootstrap-3/</a>
+        </div>
         <hr>
       </div>
 
@@ -242,8 +280,7 @@
           </div>
           <div class="col-sm-10">
             <h4>Proud Pawanee <small>Sep 29, 2015, 9:12 PM</small></h4>
-            <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>อ่านแล้วทำให้เข้าใจ Form ได้มากขึ้นเลย</p>
             <br>
           </div>
           <div class="col-sm-2 text-center">
@@ -251,8 +288,7 @@
           </div>
           <div class="col-sm-10">
             <h4>Chayan Suratruangchai <small>Sep 25, 2015, 8:25 PM</small></h4>
-            <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>ใช้งานได้จิงคับ</p>
             <br>
             <p><span class="badge">1</span> Comment:</p><br>
             <div class="row">
@@ -261,7 +297,7 @@
               </div>
               <div class="col-xs-10">
                 <h4>Somkid Homhual <small>Sep 25, 2015, 8:28 PM</small></h4>
-                <p>Me too! WOW!</p>
+                <p>จิงป่ะคับ</p>
                 <br>
               </div>
             </div>
@@ -276,7 +312,7 @@
       <tr>
         <td width="80%">Name : Suphakiat Kiatkanya<br>StudentID : 58160433</td>
         <td>
-          <a href="https://www.facebook.com/sketch.book.101505" target="_bank"><img src="img/facebook.png" width="50" align="right"></a>
+          <a href="#Home"><img src="img/home.png" width="50" align="right"></a>
         </td>
       </tr>
     </table>
